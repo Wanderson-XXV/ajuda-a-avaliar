@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+  
+  <div class="canva">
+    <h1>Design do Robô</h1>
+    <h2>Meta: 20</h2>
+    <h2 class="atual">Atual:</h2>
+    <div id="timer">0:00</div>
+    <button id="pauseBtn">Start</button>
+    <button id="restartBtn">Restart</button>
+    <div class="categoria identificacao">
+      <div class="toggle toggle_identificacao">
+          <div>Identificação </div>
+          <div class="valor">0</div>
+      </div>
+      
+      <div class="sub-categorias">
+        <form class="estrategia sub-categoria">
+          <label class="option">
+            A estratégia da missão não está clara
+            <input type="radio" class="option1" name="opcao1" value="1">
+          </label>
+          <label class="option">
+            A estratégia da missão está parcialmente clara
+            <input type="radio" class="option2" name="opcao1" value="2">
+          </label>
+          <label class="option">
+            A estratégia da missão está clara
+            <input type="radio" class="option3" name="opcao1" value="3">
+          </label>
+
+          <label class="option">
+            EXCEDEU
+            <input type="radio" class="option4" name="opcao1" value="4">
+          </label>
+        </form>
+        
+        <form class="habilidade sub-categoria">
+          <label class="option">
+            A estratégia da missão não está clara
+            <input type="radio" class="option1" name="opcao1" value="1">
+          </label>
+          <label class="option">
+            A estratégia da missão está parcialmente clara
+            <input type="radio" class="option2" name="opcao1" value="2">
+          </label>
+          <label class="option">
+            A estratégia da missão está clara
+            <input type="radio" class="option3" name="opcao1" value="3">
+          </label>
+
+          <label class="option">
+            EXCEDEU
+            <input type="radio" class="option4" name="opcao1" value="4">
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <div class="categoria projeto">
+      <div class="toggle toggle_projeto">
+          <div>Projeto </div>
+          <div class="valor">0</div>
+      </div>
+      
+      <div class="sub-categorias">
+        <form class="estrategia sub-categoria">
+          <label class="option">
+            Evidência mínima de um planejamento efetivo
+            <input type="radio" class="option1" name="opcao1" value="1">
+          </label>
+          <label class="option">
+            Evidência parcial de um planejamento efetivo
+            <input type="radio" class="option2" name="opcao1" value="2">
+          </label>
+          <label class="option">
+            Clara evidência de um planejamento efetivo
+            <input type="radio" class="option3" name="opcao1" value="3">
+          </label>
+
+          <label class="option">
+            EXCEDEU
+            <input type="radio" class="option4" name="opcao1" value="4">
+          </label>
+        </form>
+        
+        <form class="habilidade sub-categoria">
+          <label class="option">
+            Explicação mínima dos recursos do robô e do código de programação
+            <input type="radio" class="option1" name="opcao1" value="1">
+          </label>
+          <label class="option">
+            Explicação parcial dos recursos do robô e do código de programação
+            <input type="radio" class="option2" name="opcao1" value="2">
+          </label>
+          <label class="option">
+            Explicação clara dos recursos do robô e do código de programação
+            <input type="radio" class="option3" name="opcao1" value="3">
+          </label>
+
+          <label class="option">
+            EXCEDEU
+            <input type="radio" class="option4" name="opcao1" value="4">
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <div class="categoria criacao">
+      <div class="toggle toggle_criacao">
+          <div>Criação </div>
+          <div class="valor">0</div>
+      </div>
+      
+      <div class="sub-categorias">
+        <form class="estrategia sub-categoria">
+          <label class="option">
+            Explicação limitada de seu robô, de seus acessórios e da funcionalidade de seus sensores
+            <input type="radio" class="option1" name="opcao1" value="1">
+          </label>
+          <label class="option">
+            Explicação simples de seu robô, de seus acessórios e da funcionalidade de seus sensores
+            <input type="radio" class="option2" name="opcao1" value="2">
+          </label>
+          <label class="option">
+            Explicação detalhada de seu robô, de seus acessórios e da funcionalidade de seus sensores
+            <input type="radio" class="option3" name="opcao1" value="3">
+          </label>
+
+          <label class="option">
+            EXCEDEU
+            <input type="radio" class="option4" name="opcao1" value="4">
+          </label>
+        </form>
+        
+        <form class="habilidade sub-categoria">
+          <label class="option">
+            Explicação vaga de como o código de programação controla o robô
+            <input type="radio" class="option1" name="opcao1" value="1">
+          </label>
+          <label class="option">
+            Explicação parcialmente clara de como o código de programação controla o robô
+            <input type="radio" class="option2" name="opcao1" value="2">
+          </label>
+          <label class="option">
+            Explicação clara de como o código de programação controla o robô
+            <input type="radio" class="option3" name="opcao1" value="3">
+          </label>
+
+          <label class="option">
+            EXCEDEU
+            <input type="radio" class="option4" name="opcao1" value="4">
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <div class="categoria iterate">
+      <div class="toggle toggle_iterate">
+          <div>Iteração </div>
+          <div class="valor">0</div>
+      </div>
+      
+      <div class="sub-categorias">
+        <form class="estrategia sub-categoria">
+          <label class="option">
+            Evidência mínima de testagem de seu robô e código de programação
+            <input type="radio" class="option1" name="opcao1" value="1">
+          </label>
+          <label class="option">
+            Evidência parcial de testagem de seu robô e código de programação
+            <input type="radio" class="option2" name="opcao1" value="2">
+          </label>
+          <label class="option">
+            Evidência clara de testagem de seu robô e código de programação
+            <input type="radio" class="option3" name="opcao1" value="3">
+          </label>
+
+          <label class="option">
+            EXCEDEU
+            <input type="radio" class="option4" name="opcao1" value="4">
+          </label>
+        </form>
+        
+        <form class="habilidade sub-categoria">
+          <label class="option">
+            Evidência mínima de melhoria em seu robô e código de programação
+            <input type="radio" class="option1" name="opcao1" value="1">
+          </label>
+          <label class="option">
+            Evidência parcial de melhoria em seu robô e código de programação
+            <input type="radio" class="option2" name="opcao1" value="2">
+          </label>
+          <label class="option">
+            Evidência clara de melhoria em seu robô e código de programação
+            <input type="radio" class="option3" name="opcao1" value="3">
+          </label>
+
+          <label class="option">
+            EXCEDEU
+            <input type="radio" class="option4" name="opcao1" value="4">
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <div class="categoria comunicate">
+      <div class="toggle toggle_comunicate">
+          <div>Comunicação </div>
+          <div class="valor">0</div>
+      </div>
+      
+      <div class="sub-categorias">
+        <form class="estrategia sub-categoria">
+          <label class="option">
+            Explicação vaga do processo de design do robô
+            <input type="radio" class="option1" name="opcao1" value="1">
+          </label>
+          <label class="option">
+            Explicação parcialmente clara do processo de design do robô
+            <input type="radio" class="option2" name="opcao1" value="2">
+          </label>
+          <label class="option">
+            Explicação clara do processo de design do robô
+            <input type="radio" class="option3" name="opcao1" value="3">
+          </label>
+
+          <label class="option">
+            EXCEDEU
+            <input type="radio" class="option4" name="opcao1" value="4">
+          </label>
+        </form>
+        
+        <form class="habilidade sub-categoria">
+          <label class="option">
+            Evidência mínima de que todos os membros da equipe estiveram envolvidos
+            <input type="radio" class="option1" name="opcao1" value="1">
+          </label>
+          <label class="option">
+            Evidência parcial de que todos os membros da equipe estiveram envolvidos
+            <input type="radio" class="option2" name="opcao1" value="2">
+          </label>
+          <label class="option">
+            Evidência clara de que todos os membros da equipe estiveram envolvidos
+            <input type="radio" class="option3" name="opcao1" value="3">
+          </label>
+
+          <label class="option">
+            EXCEDEU
+            <input type="radio" class="option4" name="opcao1" value="4">
+          </label>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+<script src="./assets/js/app.js"></script>
+</body>
+</html>

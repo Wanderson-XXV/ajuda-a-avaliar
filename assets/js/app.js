@@ -25,7 +25,8 @@ categorias.forEach(categoria => {
 
 
     })
-    valor.innerHTML = sum
+    valor.innerHTML =  Math.round(sum)
+
     let sumAll = 0
     document.querySelectorAll('.categoria').forEach(categoria => {
 
@@ -35,7 +36,7 @@ categorias.forEach(categoria => {
   
   
     })
-    document.querySelector('.atual').innerHTML = "Atual: "+sumAll+ " ("+(sumAll/20)*100+ "%)"
+    document.querySelector('.atual').innerHTML = "Atual: "+sumAll+ " ("+Math.round((sumAll/20)*100)+ "%)"
   })
 
 });
